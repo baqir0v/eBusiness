@@ -14,21 +14,26 @@
     .headerbox{
         padding-top: 350px;
     }
-    h1{
-        font-size: 100px;
-    }
-    h3{
-        font-size: 30px;
-    }
-    button{
-        width: 180px;
-        height: 60px;
-        margin-top: 50px;
-        background-color: #1d809f;
-        color: white;
-        border: none;
-        border-radius: 10px;
-    }
+        h1{
+            font-size: 100px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        button{
+            width: 180px;
+            height: 60px;
+            margin-top: 50px;
+            background-color: #1d809f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+        .headerbutton:hover{
+            cursor: pointer;
+            transition: 0.5s;
+            filter: brightness(80%);
+        }
 }
     // Header end
 
@@ -65,13 +70,19 @@
         border: none;
         border-radius: 10px;
     }
+        .aboutbutton:hover{
+            filter: brightness(80%);
+            cursor: pointer;
+            transition: 0.5s;
+
+        }
 
 }
     // about end
     // services start
 .services{
     width: 100%;
-    height: 600px;
+    
     background-color: #1d809f;
     text-align: center;
     .servicestext{
@@ -88,7 +99,7 @@
     .servicesbox{
         display: flex;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 80px;
             .box1{
                 height: 250px;
                 width: 280px;
@@ -185,6 +196,14 @@
                     font-size: 20px;
                 }
     }
+    @media screen and (max-width:1050px) {
+        .servicesbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
     // services end
@@ -212,12 +231,17 @@
             border: none;
             border-radius: 10px;
         }
+            .calloutbox button:hover{
+                cursor: pointer;
+                filter: brightness(80%);
+                transition: 0.5s;
+
+            }
 }
     // Callout end
     // Portfolio start
 .portfolio{
     width: 100%;
-    height:1000px ;
     text-align: center;
         .portfoliotext{
             padding-top: 50px;
@@ -270,7 +294,17 @@
                     transition: 0.5s;
                 }
         }
+       @media screen and (max-width:1050px){
+    .portfoliobox{
+        grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4";
+    }
+} 
 }
+
 // Portfolio end
 // Buttons start
 .buttons{
@@ -291,6 +325,12 @@
                 border: none;
                 border-radius: 10px;
             }
+                .clickme:hover{
+                    cursor: pointer;
+                    filter: brightness(80%);
+                    transition: 0.5s;
+
+                }
             .lookatme{
                 margin-top: 30px;
                 width: 150px;
@@ -300,6 +340,12 @@
                 border-radius: 10px;
                 color: white;
             }
+                .lookatme:hover{
+                    cursor: pointer;
+                    filter: brightness(80%);
+                    transition: 0.5s;
+
+                }
         }
 }
 .textcenter{
@@ -308,7 +354,7 @@
     background-color: #f8f9fa;
     text-align: center;
         .icons{
-            padding-top: 50px;
+            padding-top: 80px;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -322,6 +368,11 @@
                 font-size: 30px;
                 padding-top: 16px;
             }
+                .facebook:hover{
+                    filter: brightness(80%);
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
             .twitter{
                 width: 64px;
                 height: 64px;
@@ -330,6 +381,11 @@
                 color: white;
                 font-size: 30px;
                 padding-top: 16px;
+            }
+            .twitter:hover{
+                filter: brightness(80%);
+                cursor: pointer;
+                transition: 0.5s;
             }
             .github{
                 width: 64px;
@@ -340,7 +396,12 @@
                 font-size: 30px;
                 padding-top: 16px;
             }
+            .github:hover{
+                filter: brightness(80%);
+                cursor: pointer;
+                transition: 0.5s;
+            }
         p{
-            padding-top: 100px;
+            padding-top: 50px;
         }
 }

@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    // Header start
+
+.header{
+    width: 100%;
+    height: 900px;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
+    text-align: center;
+    .headerbox{
+        padding-top: 350px;
+    }
+    h1{
+        font-size: 100px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    button{
+        width: 180px;
+        height: 60px;
+        margin-top: 50px;
+        background-color: #1d809f;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+}
+    // Header end
+
+    // about start
+.about{
+    width: 100%;
+    height: 400px;
+    background-color: #f8f9fa;
+    text-align: center;
+    .aboutbox{
+        padding-top: 150px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .unsplash{
+        text-decoration: none;
+        color: black;
+    }
+    .unsplash:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: blue;
+    }
+    button{
+        width: 180px;
+        height: 60px;
+        margin-top: 50px;
+        background-color: #212529;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+
+}
+    // about end
+    // services start
+.services{
+    width: 100%;
+    height: 600px;
+    background-color: #1d809f;
+    text-align: center;
+    .servicestext{
+        padding-top:50px;
+    }
+    .servicestext h3{
+        font-size: 20px;
+        color: #ecb807;
+    }
+    .servicestext h2{
+        font-size: 60px;
+        color: white;
+    }
+    .servicesbox{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+            .box1{
+                height: 250px;
+                width: 280px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                grid-area: box1;
+            }
+                .circle1{
+                    width: 112px;
+                    height: 112px;
+                    background-color: white;
+                    border-radius: 112px;
+                    padding-top: 40px;
+                    font-size: 30px;
+                    color: #1d809f;
+                }
+                h4{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            .box2{
+                height: 250px;
+                width: 280px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                .circle2{
+                    width: 112px;
+                    height: 112px;
+                    background-color: white;
+                    border-radius: 112px;
+                    padding-top: 40px;
+                    font-size: 30px;
+                    color: #1d809f;
+                }
+                h4{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            .box3{
+                height: 250px;
+                width: 280px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                .circle3{
+                    width: 112px;
+                    height: 112px;
+                    background-color: white;
+                    border-radius: 112px;
+                    padding-top: 40px;
+                    font-size: 30px;
+                    color: #1d809f;
+                }
+                h4{
+                    font-size: 30px;
+                    color: white;
+                }
+                p{
+                    font-size: 20px;
+                    color: white;
+                }
+            .box4{
+                height: 250px;
+                width: 280px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                .circle4{
+                    width: 112px;
+                    height: 112px;
+                    background-color: white;
+                    border-radius: 112px;
+                    padding-top: 40px;
+                    font-size: 30px;   
+                    color: #1d809f;
+                }
+                h4{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+    }
+}
+
+    // services end
+    // Callout start
+
+.call {
+    padding-top: 300px;
+}
+
+.callout{
+    width: 100%;
+    height: 750px;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+    text-align: center;
+    
+        .calloutbox h2{
+            font-size: 80px;
+        }
+        .calloutbox button{
+            width: 180px;
+            height: 60px;
+            margin-top: 50px;
+            background-color: #1d809f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+}
+    // Callout end
+    // Portfolio start
+.portfolio{
+    width: 100%;
+    height:1000px ;
+    text-align: center;
+        .portfoliotext{
+            padding-top: 50px;
+        }
+            .portfoliotext h3{
+                font-size: 20px;
+                color: #ecb807;
+            }
+            .portfoliotext h2{
+                font-size: 50px;
+            }
+        .portfoliobox{
+            padding-top: 60px;
+            
+            display: grid;
+            justify-content: center;
+            grid-template-areas: 
+            "box1 box2"
+            "box3 box4";
+            img{
+                width: 600px;
+                height: 400px;
+            }
+            .box1{
+                grid-area: box1; 
+            }
+                .box1 img:hover{
+                    padding: 50px;
+                    transition: 0.5s;
+                }
+            .box2{
+                grid-area: box2; 
+            }
+                .box2 img:hover{
+                    padding: 50px;
+                    transition: 0.5s;
+                }
+            .box3{
+                grid-area: box3; 
+            }
+                .box3 img:hover{
+                    padding: 50px;
+                    transition: 0.5s;
+                }
+            .box4{
+                grid-area: box4; 
+            }
+                .box4 img:hover{
+                    padding: 50px;
+                    transition: 0.5s;
+                }
+        }
+}
+// Portfolio end
+// Buttons start
+.buttons{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: #1d809f;
+        .box{
+            padding-top: 120px;
+            h2{
+                font-size: 40px;
+            }
+            .clickme{
+                margin-top: 30px;
+                width: 150px;
+                height: 60px;
+                background-color: white;
+                border: none;
+                border-radius: 10px;
+            }
+            .lookatme{
+                margin-top: 30px;
+                width: 150px;
+                height: 60px;
+                background-color: #212529;
+                border: none;
+                border-radius: 10px;
+                color: white;
+            }
+        }
+}
+.textcenter{
+    width: 100%;
+    height: 300px;
+    background-color: #f8f9fa;
+    text-align: center;
+        .icons{
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+            .facebook{
+                width: 64px;
+                height: 64px;
+                border-radius: 64px;
+                background-color: #1d809f;
+                color: white;
+                font-size: 30px;
+                padding-top: 16px;
+            }
+            .twitter{
+                width: 64px;
+                height: 64px;
+                border-radius: 64px;
+                background-color: #1d809f;
+                color: white;
+                font-size: 30px;
+                padding-top: 16px;
+            }
+            .github{
+                width: 64px;
+                height: 64px;
+                border-radius: 64px;
+                background-color: #1d809f;
+                color: white;
+                font-size: 30px;
+                padding-top: 16px;
+            }
+        p{
+            padding-top: 100px;
+        }
+}
